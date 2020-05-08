@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class ejemplo3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		System.out.println("ingrese un numero entr 0 y 9999");
+		int mil,cen,dec,uni,num=scan.nextInt();
+		int mod1,mod2,mod3,mod4;
+		mil = num/1000;
+		mod1= num%1000;
+		cen = mod1/100;
+		mod2= mod1%100;
+		dec = mod2/10;
+		mod3= mod2%10;
+		uni = mod3/1;
+		System.out.println(uni+""+dec+""+cen+""+mil);	
+
+	}
+
+}
